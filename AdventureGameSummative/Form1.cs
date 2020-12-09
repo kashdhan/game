@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 //Kashish Dhanoa
-//
+//Wednesday November 9th 2020
+//A quest adventure for witches/wizards in Gryffindor House. 
+
 namespace AdventureGameSummative
 {
     public partial class Form1 : Form
@@ -17,6 +19,7 @@ namespace AdventureGameSummative
         // tracks what part of the game the user is at
         int scene = 0;
         Random randGen = new Random();
+        SoundPlayer player;
         public Form1()
         {
             InitializeComponent();
@@ -272,7 +275,7 @@ namespace AdventureGameSummative
                 }
             }
             switch (scene)
-            {//Display text and game options to screen based on the current scene 
+            {//Display text, game options, pictures and sounds to screen based on the current scene 
                 case 0://start scene
                     outputLabel.Text = "Welcome to the Wizarding World. I've got a *secret* quest for you! That is, " +
                         "if you're from Gryffindor house.\n\nAre you from Gryffindor House??";
@@ -432,6 +435,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'll just drink from the Lake.";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.boat;
+                    player = new SoundPlayer(Properties.Resources.boat_sound);
+                    player.Play();
                     break;
                 case 19:
                     outputLabel.Text = "You continue down the path and reach a nearby brook. You rest and use your disillusionment " +
