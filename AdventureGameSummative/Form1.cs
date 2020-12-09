@@ -469,6 +469,7 @@ namespace AdventureGameSummative
 
                     break;
                 case 22:
+                    player.Stop();
                     outputLabel.Text = "Oh no, you've disturbed the Merpeople. Because you didn't bring anything to help you " +
                         "breathe underwater, you get sucked under. You make a fantastic mermaid meal!\n\nPlay Again?";
                     redLabel.Text = "Yes";
