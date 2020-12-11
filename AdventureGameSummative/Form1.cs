@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
+
 //Kashish Dhanoa
 //Wednesday November 9th 2020
 //A quest adventure for witches/wizards in Gryffindor House. 
@@ -30,6 +32,8 @@ namespace AdventureGameSummative
             blueLabel.Text = "I am not sure...";
             yellowLabel.Text = "I am not.";
             sceneImageBox.BackgroundImage = Properties.Resources.gryf;
+            player = new SoundPlayer(Properties.Resources.theme);
+            player.Play();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -221,7 +225,7 @@ namespace AdventureGameSummative
                 {
                     int value = randGen.Next(1, 101);
 
-                    if (value < 70)
+                    if (value > 70)
                     {
                         scene = 20;
                     }
@@ -275,7 +279,7 @@ namespace AdventureGameSummative
                 }
             }
             switch (scene)
-            {//Display text, game options, pictures and sounds to screen based on the current scene 
+            {//Display text, game options, pictures and sounds to screen based on the current scene.
                 case 0://start scene
                     outputLabel.Text = "Welcome to the Wizarding World. I've got a *secret* quest for you! That is, " +
                         "if you're from Gryffindor house.\n\nAre you from Gryffindor House??";
@@ -283,6 +287,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I am not sure...";
                     yellowLabel.Text = "I am not.";
                     sceneImageBox.BackgroundImage = Properties.Resources.gryf;
+                    player = new SoundPlayer(Properties.Resources.theme);
+                    player.Play();
                     break;
                 case 1:
                     outputLabel.Text = "It is likely that you may not return home after this quest, nor can your safety be guaranteed." +
@@ -299,6 +305,8 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes!";
                     blueLabel.Text = "No.";
                     yellowLabel.Text = "";
+                    player = new SoundPlayer(Properties.Resources.theme);
+                    player.Play();
                     break;
                 case 3:
                     outputLabel.Text = "Well let's find out what house you're in!\n\nDo you tend to make decisions using your gut " +
@@ -307,6 +315,9 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.coa;
+                    player = new SoundPlayer(Properties.Resources.theme);
+                    player.Play();
+
                     break;
                 case 4:
                     outputLabel.Text = "You walk into a room and find a jerk being rude to your best friend (even though your best " +
@@ -333,6 +344,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.huffle;
+                    player = new SoundPlayer(Properties.Resources.hufflepuff_sound);
+                    player.Play();
                     break;
                 case 7:
                     outputLabel.Text = "Congratulations! You are a Gryffindor. You may take on this quest! It is likely " +
@@ -341,6 +354,8 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
+                    player = new SoundPlayer(Properties.Resources.gryffindor_sound);
+                    player.Play();
                     break;
                 case 8:
                     outputLabel.Text = "Unfortunately you are a Slytherin! You cannot complete this quest at this time. " +
@@ -349,6 +364,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.slyth;
+                    player = new SoundPlayer(Properties.Resources.slytherin_sound);
+                    player.Play();
                     break;
                 case 9:
                     outputLabel.Text = "Unfortunately you are a Ravenclaw! You cannot complete this quest at this time. " +
@@ -357,6 +374,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.raven;
+                    player = new SoundPlayer(Properties.Resources.ravenclaw_sound);
+                    player.Play();
                     break;
                 case 10:
                     outputLabel.Text = "Your quest is to retrieve a magical red amethyst. The closest one is located in the Den of Dragons. " +
@@ -366,6 +385,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I will leave tomorrow at dawn...";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.red;
+                    player = new SoundPlayer(Properties.Resources.night_sound);
+                    player.Play();
                     break;
                 case 11:
                     outputLabel.Text = "Alright. Come back soon to see if I have another quest for you. Goodbye! \n\n Play Again?";
@@ -382,6 +403,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I will use Lumos to help me see.";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.acro;
+                    player = new SoundPlayer(Properties.Resources.night_sound);
+                    player.Play();
                     break;
                 case 13:
                     outputLabel.Text = "Uh oh. Remember this was a SECRET quest... Prof. McGonagall caught you wandering about. " +
@@ -389,16 +412,18 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
+                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player.Play();
                     sceneImageBox.BackgroundImage = Properties.Resources.mcgona;
                     break;
                 case 14:
                     outputLabel.Text = "Wow, you're fast! You've just left the forbidden forest. You seem tired.\n\nWould you like to " +
                         "set up camp and rest for a few hours or continue your journey by foot?";
                     redLabel.Text = "I'm tired, I should rest!";
-                    blueLabel.Text = "I should continue my journey, can't slow down!";
+                    blueLabel.Text = "I'll continue my journey; I can't slow down!";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.tent;
-
+                   
                     break;
                 case 15:
                     outputLabel.Text = "Bad idea!!! By the time you get your wand out, the Acromantula have completely surrounded you. " +
@@ -407,6 +432,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.acro;
+                    player = new SoundPlayer(Properties.Resources.lumos);
+                    player.Play();
                     break;
                 case 16:
                     outputLabel.Text = "Uh, oh. During your sleep the Acromantula found you and took you back for an early snack!" +
@@ -415,6 +442,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.acro;
+                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player.Play();
                     break;
                 case 17:
                     outputLabel.Text = "Great, you must keep going! You've now been walking peacefully for hours. Suddenly you " +
@@ -440,7 +469,7 @@ namespace AdventureGameSummative
                     break;
                 case 19:
                     outputLabel.Text = "You continue down the path and reach a nearby brook. You rest and use your disillusionment " +
-                        "charm. You slept peacefully. When youwake up, you follow the brook for hours until you reach the Lake of " +
+                        "charm. You slept peacefully. When you wake up, you follow the brook for hours until you reach the Lake of " +
                         "Shining Pebbles. As you use your boat to cross the river, you realize you have run out of drinking water.\n\n" +
                         " Will you get water from your one-time Agumenti Charm or will you drink from the Lake?";
                     redLabel.Text = "I'll use my Agumenti Charm!";
@@ -466,7 +495,7 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'm gonna apparate!";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.mount;
-
+                    //water drinking sound
                     break;
                 case 22:
                     player.Stop();
@@ -476,6 +505,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.mer;
+                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player.Play();
                     break;
                 case 23:
                     outputLabel.Text = "The witches and wizards give in. You've made an oath to not tell anyone about this trap, " +
@@ -485,6 +516,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.red;
+                    player = new SoundPlayer(Properties.Resources.you_win);
+                    player.Play();
                     break;
                 case 24:
                     outputLabel.Text = "The witches and wizards agree. They cast a forgetfulness charm on you and apparate you back" +
@@ -493,6 +526,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.castle;
+                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player.Play();
                     break;
                 case 25:
                     outputLabel.Text = "Woohoo!!! You are sneakkkyy! You've got the magical red amethyst! I knew you could do it! Your house " +
@@ -501,6 +536,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.red;
+                    player = new SoundPlayer(Properties.Resources.you_win);
+                    player.Play();
                     break;
                 case 26:
                     outputLabel.Text = "Oh no! You've awaken the Guardian Dragon. She could sense your apparition magic right away. " +
@@ -509,12 +546,19 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.dragonangry;
+                    player = new SoundPlayer(Properties.Resources.dragon);
+                    player.Play();
                     break;
                 case 27:
                     outputLabel.Text = "Thanks for playing!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
                     yellowLabel.Text = "";
+                    player = new SoundPlayer(Properties.Resources.theme);
+                    player.Play();
+                    Thread.Sleep(2000);
+
+                    Application.Exit();
                     break;
                 default:
                     break;

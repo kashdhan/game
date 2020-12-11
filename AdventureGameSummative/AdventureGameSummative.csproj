@@ -146,5 +146,44 @@
   <ItemGroup>
     <None Include="Resources\boat sound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lumos.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ravenclaw sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hufflepuff sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slytherin sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gryffindor sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you lose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you win.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actual theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gryffindor sounnndd.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

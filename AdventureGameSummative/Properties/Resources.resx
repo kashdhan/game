@@ -223,6 +223,9 @@
   <data name="coa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hogwarts-7917.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dragon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragon.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="dragonangry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toppng.com-dragon-png-harry-potter-dragon-1024x949.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,8 +313,17 @@
   <data name="gryf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hogwarts-7938.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gryffindor_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gryffindor sounnndd.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="huffle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngkey.com-crest-png-439176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hufflepuff_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hufflepuff sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lumos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lumos.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="mcgona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\favpng_professor-minerva-mcgonagall-harry-potter-and-the-philosophers-stone-professor-severus-snape-harry-potter-and-the-prisoner-of-azkaban-albus-dumbledore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,8 +334,14 @@
   <data name="mount" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mountain-cave-by-glaiceana-mountain-cave-png-1095_730.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="night_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\night sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="raven" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hiclipart.com (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ravenclaw_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ravenclaw sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,8 +433,14 @@
   <data name="slyth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hiclipart.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="slytherin_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slytherin sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\151-1519061_tent-transparent-tree-tent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\tent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actual theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wizardspic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -504,5 +528,11 @@
         /OXQNwwJ84dnGR8kA566Erl0PYAR3BTI7ZDb8OwGvBuDmkAmioM4IPTu3x/AFw1dkZBSBEZv0cpWCEHy
         fz7ju2+P4v8c38jo1+9/APIZj050VkQ/AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="you_lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\you lose.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="you_win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\you win.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
