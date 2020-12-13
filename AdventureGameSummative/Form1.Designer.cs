@@ -49,19 +49,20 @@
             this.outputLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.outputLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.outputLabel.Location = new System.Drawing.Point(9, 12);
-            this.outputLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.outputLabel.Location = new System.Drawing.Point(14, 18);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(555, 232);
+            this.outputLabel.Size = new System.Drawing.Size(832, 357);
             this.outputLabel.TabIndex = 0;
             // 
             // redLabel
             // 
             this.redLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.redLabel.Location = new System.Drawing.Point(107, 458);
+            this.redLabel.Location = new System.Drawing.Point(160, 705);
+            this.redLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.redLabel.Name = "redLabel";
-            this.redLabel.Size = new System.Drawing.Size(342, 60);
+            this.redLabel.Size = new System.Drawing.Size(513, 92);
             this.redLabel.TabIndex = 1;
             this.redLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -69,9 +70,10 @@
             // 
             this.blueLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.blueLabel.Location = new System.Drawing.Point(107, 518);
+            this.blueLabel.Location = new System.Drawing.Point(160, 797);
+            this.blueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.blueLabel.Name = "blueLabel";
-            this.blueLabel.Size = new System.Drawing.Size(342, 55);
+            this.blueLabel.Size = new System.Drawing.Size(513, 85);
             this.blueLabel.TabIndex = 2;
             this.blueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -79,54 +81,59 @@
             // 
             this.yellowLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.yellowLabel.Location = new System.Drawing.Point(107, 573);
+            this.yellowLabel.Location = new System.Drawing.Point(160, 882);
+            this.yellowLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yellowLabel.Name = "yellowLabel";
-            this.yellowLabel.Size = new System.Drawing.Size(342, 60);
+            this.yellowLabel.Size = new System.Drawing.Size(513, 92);
             this.yellowLabel.TabIndex = 3;
             this.yellowLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // sceneImageBox
             // 
             this.sceneImageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sceneImageBox.Location = new System.Drawing.Point(1, 229);
+            this.sceneImageBox.Location = new System.Drawing.Point(2, 362);
+            this.sceneImageBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sceneImageBox.Name = "sceneImageBox";
-            this.sceneImageBox.Size = new System.Drawing.Size(573, 223);
+            this.sceneImageBox.Size = new System.Drawing.Size(860, 333);
             this.sceneImageBox.TabIndex = 7;
             this.sceneImageBox.TabStop = false;
             // 
             // yellowImage
             // 
             this.yellowImage.Image = global::AdventureGameSummative.Properties.Resources.yellow_50x50;
-            this.yellowImage.Location = new System.Drawing.Point(15, 583);
+            this.yellowImage.Location = new System.Drawing.Point(22, 897);
+            this.yellowImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yellowImage.Name = "yellowImage";
-            this.yellowImage.Size = new System.Drawing.Size(51, 50);
+            this.yellowImage.Size = new System.Drawing.Size(76, 77);
             this.yellowImage.TabIndex = 6;
             this.yellowImage.TabStop = false;
             // 
             // blueImage
             // 
             this.blueImage.Image = global::AdventureGameSummative.Properties.Resources.blue_50x50;
-            this.blueImage.Location = new System.Drawing.Point(15, 522);
+            this.blueImage.Location = new System.Drawing.Point(22, 803);
+            this.blueImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.blueImage.Name = "blueImage";
-            this.blueImage.Size = new System.Drawing.Size(51, 51);
+            this.blueImage.Size = new System.Drawing.Size(76, 78);
             this.blueImage.TabIndex = 5;
             this.blueImage.TabStop = false;
             // 
             // redImage
             // 
             this.redImage.Image = global::AdventureGameSummative.Properties.Resources.red_50x50;
-            this.redImage.Location = new System.Drawing.Point(15, 458);
+            this.redImage.Location = new System.Drawing.Point(22, 705);
+            this.redImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.redImage.Name = "redImage";
-            this.redImage.Size = new System.Drawing.Size(51, 50);
+            this.redImage.Size = new System.Drawing.Size(76, 77);
             this.redImage.TabIndex = 4;
             this.redImage.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(576, 644);
+            this.ClientSize = new System.Drawing.Size(864, 991);
             this.Controls.Add(this.sceneImageBox);
             this.Controls.Add(this.yellowImage);
             this.Controls.Add(this.blueImage);
@@ -136,6 +143,7 @@
             this.Controls.Add(this.redLabel);
             this.Controls.Add(this.outputLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Gryffindor Quest Request ";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

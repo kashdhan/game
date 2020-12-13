@@ -214,8 +214,8 @@
   <data name="boat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngwing.com (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boat_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boat sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="boat_creaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boat creaking.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngkey.com-disney-castle-png-223345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,7 +313,7 @@
   <data name="gryf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hogwarts-7938.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gryffindor_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="gryffindor_sounnndd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gryffindor sounnndd.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="huffle" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -436,11 +436,14 @@
   <data name="slytherin_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\slytherin sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="suspense_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boat sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\actual theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\HPtheme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wizardspic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

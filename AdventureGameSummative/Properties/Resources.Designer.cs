@@ -93,9 +93,9 @@ namespace AdventureGameSummative.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream boat_sound {
+        internal static System.IO.UnmanagedMemoryStream boat_creaking {
             get {
-                return ResourceManager.GetStream("boat_sound", resourceCulture);
+                return ResourceManager.GetStream("boat_creaking", resourceCulture);
             }
         }
         
@@ -171,9 +171,9 @@ namespace AdventureGameSummative.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream gryffindor_sound {
+        internal static System.IO.UnmanagedMemoryStream gryffindor_sounnndd {
             get {
-                return ResourceManager.GetStream("gryffindor_sound", resourceCulture);
+                return ResourceManager.GetStream("gryffindor_sounnndd", resourceCulture);
             }
         }
         
@@ -299,6 +299,15 @@ namespace AdventureGameSummative.Properties {
         internal static System.IO.UnmanagedMemoryStream slytherin_sound {
             get {
                 return ResourceManager.GetStream("slytherin_sound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream suspense_water {
+            get {
+                return ResourceManager.GetStream("suspense_water", resourceCulture);
             }
         }
         

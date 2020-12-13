@@ -305,7 +305,7 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes!";
                     blueLabel.Text = "No.";
                     yellowLabel.Text = "";
-                    player = new SoundPlayer(Properties.Resources.theme);
+                    player = new SoundPlayer(Properties.Resources.you_lose);
                     player.Play();
                     break;
                 case 3:
@@ -317,7 +317,6 @@ namespace AdventureGameSummative
                     sceneImageBox.BackgroundImage = Properties.Resources.coa;
                     player = new SoundPlayer(Properties.Resources.theme);
                     player.Play();
-
                     break;
                 case 4:
                     outputLabel.Text = "You walk into a room and find a jerk being rude to your best friend (even though your best " +
@@ -354,7 +353,7 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
-                    player = new SoundPlayer(Properties.Resources.gryffindor_sound);
+                    player = new SoundPlayer(Properties.Resources.gryffindor_sounnndd);
                     player.Play();
                     break;
                 case 8:
@@ -393,6 +392,8 @@ namespace AdventureGameSummative
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
+                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player.Play();
                     break;
                 case 12:
                     outputLabel.Text = "Good choice. It's hard to see at night, so you sneaked away quietly! Because of the lack of " +
@@ -423,7 +424,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'll continue my journey; I can't slow down!";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.tent;
-                   
+                    player = new SoundPlayer(Properties.Resources.night_sound);
+                    player.Play();
                     break;
                 case 15:
                     outputLabel.Text = "Bad idea!!! By the time you get your wand out, the Acromantula have completely surrounded you. " +
@@ -453,6 +455,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "The muddy trail with branches and dead leaves!";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.fork;
+                    player = new SoundPlayer(Properties.Resources.night_sound);
+                    player.Play();
                     break;
                 case 18:
                     outputLabel.Text = "The road less traveled was a good choice. You camp out for the night using a disillusionment " +
@@ -464,7 +468,7 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'll just drink from the Lake.";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.boat;
-                    player = new SoundPlayer(Properties.Resources.boat_sound);
+                    player = new SoundPlayer(Properties.Resources.boat_creaking);
                     player.Play();
                     break;
                 case 19:
@@ -476,6 +480,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'll just drink from the Lake.";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.boat;
+                    player = new SoundPlayer(Properties.Resources.boat_creaking);
+                    player.Play();
                     break;
                 case 20:
                     outputLabel.Text = "Uh, oh. You walked right into an invisible centaur trap. Some witches and wizards " +
@@ -495,7 +501,8 @@ namespace AdventureGameSummative
                     blueLabel.Text = "I'm gonna apparate!";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.mount;
-                    //water drinking sound
+                    player = new SoundPlayer(Properties.Resources.lumos);
+                    player.Play();
                     break;
                 case 22:
                     player.Stop();
@@ -505,7 +512,7 @@ namespace AdventureGameSummative
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImageBox.BackgroundImage = Properties.Resources.mer;
-                    player = new SoundPlayer(Properties.Resources.you_lose);
+                    player = new SoundPlayer(Properties.Resources.suspense_water);
                     player.Play();
                     break;
                 case 23:
@@ -557,7 +564,6 @@ namespace AdventureGameSummative
                     player = new SoundPlayer(Properties.Resources.theme);
                     player.Play();
                     Thread.Sleep(2000);
-
                     Application.Exit();
                     break;
                 default:

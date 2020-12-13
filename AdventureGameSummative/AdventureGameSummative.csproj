@@ -144,9 +144,6 @@
     <None Include="Resources\1234.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\boat sound.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tent.png" />
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gryffindor sounnndd.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOAT SOUND.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boat creaking.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HPtheme.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
