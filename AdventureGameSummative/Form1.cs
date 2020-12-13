@@ -18,14 +18,14 @@ namespace AdventureGameSummative
 {
     public partial class Form1 : Form
     {
-        // tracks what part of the game the user is at
+        // tracks what part of the game the user is at, random generator & sound player
         int scene = 0;
         Random randGen = new Random();
         SoundPlayer player;
         public Form1()
         {
             InitializeComponent();
-            //starting text
+            //starting scene & text
             outputLabel.Text = "Welcome to the Wizarding World. I've got a *secret* quest for you! That is, " +
                         "if you're from Gryffindor house.\n\nAre you from Gryffindor House??";
             redLabel.Text = "I am!";
@@ -556,7 +556,7 @@ namespace AdventureGameSummative
                     player = new SoundPlayer(Properties.Resources.dragon);
                     player.Play();
                     break;
-                case 27:
+                case 27://ending scene
                     outputLabel.Text = "Thanks for playing!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
