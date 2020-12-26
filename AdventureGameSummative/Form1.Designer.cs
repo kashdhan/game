@@ -52,14 +52,14 @@
             this.outputLabel.Location = new System.Drawing.Point(14, 18);
             this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(832, 357);
+            this.outputLabel.Size = new System.Drawing.Size(920, 357);
             this.outputLabel.TabIndex = 0;
             // 
             // redLabel
             // 
             this.redLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.redLabel.Location = new System.Drawing.Point(160, 705);
+            this.redLabel.Location = new System.Drawing.Point(178, 728);
             this.redLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.redLabel.Name = "redLabel";
             this.redLabel.Size = new System.Drawing.Size(513, 92);
@@ -70,7 +70,7 @@
             // 
             this.blueLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.blueLabel.Location = new System.Drawing.Point(160, 797);
+            this.blueLabel.Location = new System.Drawing.Point(178, 820);
             this.blueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.blueLabel.Name = "blueLabel";
             this.blueLabel.Size = new System.Drawing.Size(513, 85);
@@ -81,7 +81,7 @@
             // 
             this.yellowLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.yellowLabel.Location = new System.Drawing.Point(160, 882);
+            this.yellowLabel.Location = new System.Drawing.Point(178, 905);
             this.yellowLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yellowLabel.Name = "yellowLabel";
             this.yellowLabel.Size = new System.Drawing.Size(513, 92);
@@ -91,17 +91,17 @@
             // sceneImageBox
             // 
             this.sceneImageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sceneImageBox.Location = new System.Drawing.Point(2, 362);
+            this.sceneImageBox.Location = new System.Drawing.Point(20, 385);
             this.sceneImageBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sceneImageBox.Name = "sceneImageBox";
-            this.sceneImageBox.Size = new System.Drawing.Size(860, 333);
+            this.sceneImageBox.Size = new System.Drawing.Size(914, 333);
             this.sceneImageBox.TabIndex = 7;
             this.sceneImageBox.TabStop = false;
             // 
             // yellowImage
             // 
             this.yellowImage.Image = global::AdventureGameSummative.Properties.Resources.yellow_50x50;
-            this.yellowImage.Location = new System.Drawing.Point(22, 897);
+            this.yellowImage.Location = new System.Drawing.Point(40, 920);
             this.yellowImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yellowImage.Name = "yellowImage";
             this.yellowImage.Size = new System.Drawing.Size(76, 77);
@@ -111,7 +111,7 @@
             // blueImage
             // 
             this.blueImage.Image = global::AdventureGameSummative.Properties.Resources.blue_50x50;
-            this.blueImage.Location = new System.Drawing.Point(22, 803);
+            this.blueImage.Location = new System.Drawing.Point(40, 826);
             this.blueImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.blueImage.Name = "blueImage";
             this.blueImage.Size = new System.Drawing.Size(76, 78);
@@ -121,7 +121,7 @@
             // redImage
             // 
             this.redImage.Image = global::AdventureGameSummative.Properties.Resources.red_50x50;
-            this.redImage.Location = new System.Drawing.Point(22, 705);
+            this.redImage.Location = new System.Drawing.Point(40, 728);
             this.redImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.redImage.Name = "redImage";
             this.redImage.Size = new System.Drawing.Size(76, 77);
@@ -133,7 +133,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(864, 991);
+            this.ClientSize = new System.Drawing.Size(947, 1026);
             this.Controls.Add(this.sceneImageBox);
             this.Controls.Add(this.yellowImage);
             this.Controls.Add(this.blueImage);
